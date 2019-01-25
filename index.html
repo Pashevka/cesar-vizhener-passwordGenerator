@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Шифрование</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="block allpage">
+        <div class="tabBlock block">
+            <div id="Cesar" class="block Cesar">Cesar</div>
+            <div id="Vizhiner" class="block Vizhener">Vizhener</div>
+            <div id="Generator" class="block Generator">Generator</div>
+        </div>
+        <div class="methods block">
+            <div id="Cesar-area" class="block Cesar-area">
+                <div class="Cesar-settings block">
+                    <div class="words-count">
+                        <div class="words-count-first">
+                            <label>Введите количество символов сдвига</label>
+                        </div>
+                        <div class="words-count-second">
+                            <input id="Cesar_count" type="text">
+                        </div>
+                    </div>
+                    <div class="export ">
+                        <div><label>Параметры шифрования</label></div>
+                        <div class="hover-settings">
+                            <input id="Cesar_symv" type="checkbox">
+                            <label for="Cesar_symv">Шифровать символы</label>
+                        </div>
+                        <div class="hover-settings">
+                            <input id="Cesar_numb" type="checkbox">
+                            <label for="Cesar_numb">Шифровать цифры</label>
+                        </div>
+                    </div>
+                    <div class="export ">
+                        <div><label>Параметры шифрования</label></div>
+                        <div class="hover-settings">
+                            <input id="" type="checkbox">
+                            <label for="">Шифровать символы</label>
+                        </div>
+                        <div class="hover-settings">
+                            <input id="" type="checkbox">
+                            <label for="">Шифровать цифры</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="input block">
+                    <label class="label">Введите исходный текст</label>
+                    <br/>
+                    <textarea id="Cesar-input" class="Cesar-input" type="text"></textarea>
+                    <div class="Cesar-output block">
+                        <div>
+                            <div id="code" class="button27 cesar-btn">Зашифровать</div>
+                            <div id="decode" class="button27 cesar-btn">Расшифровать</div>
+                        </div>
+                        <div class="block">
+                            <textarea id="Cesar-output" class="Cesar-input" type="text"></textarea>
+                            <div class="button27 cesar-btn">Сохранить
+                                <input id="Timurik" type="file">
+                            </div>
+                            <div class="button27 cesar-btn">Открыть</div>
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div id="Vizhener-area" class="block Vizhener-area">
+                <div class="Cesar-settings block">
+                    <div class="words-coun-vizhiner">
+                        <div class="words-count-first">
+                            <label>Введите фразу для шифра</label>
+                        </div>
+                        <div class="words-count-second">
+                            <input id="Vizhener_count" type="text">
+                        </div>
+                    </div>
+                    <div class="export ">
+                        <div><label>Параметры шифрования</label></div>
+                        <div class="hover-settings">
+                            <input id="Vizhener_symv" type="checkbox">
+                            <label for="Vizhener_symv">Шифровать символы</label>
+                        </div>
+                        <div class="hover-settings">
+                            <input id="Vizhener_numb" type="checkbox">
+                            <label for="Vizhener_numb">Шифровать цифры</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="input block">
+                    <label class="label">Введите исходный текст</label>
+                    <br/>
+                    <textarea id="Vizhener-input" class="Cesar-input" type="text"></textarea>
+                    <div class="Cesar-output block">
+                        <div>
+                            <div id="Vizhener-code" class="button27 cesar-btn">Зашифровать</div>
+                            <div id="Vizhener-decode" class="button27 cesar-btn">Расшифровать</div>
+                        </div>
+                        <div class="block">
+                            <textarea id="Vizhener-output" class="Cesar-input" type="text"></textarea>
+                            <div class="button27 cesar-btn">Сохранить
+                                <input id="Vizhener-Timurik" type="file">
+                            </div>
+                            <div class="button27 cesar-btn">Открыть</div>
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div id="Generator-area" class="block Generator-area">
+                <div class="Generator-content">
+                    <div><textarea id="password_export"  class="password-out"></textarea></div>
+                    <div class="Generator-settings block">
+                        <div class="words-count">
+                            <div class="words-count-first">
+                                <label>Введите количество символов</label>
+                            </div>
+                            <div class="words-count-second">
+                                <input id="generator-count" type="text">
+                            </div>
+                        </div>
+                        <div class="words-count">
+                            <div class="words-count-first">
+                                <label>Введите количество паролей</label>
+                            </div>
+                            <div class="words-count-second">
+                                <input id="generator-count-password" type="text">
+                            </div>
+                        </div>
+                        <div class="export ">
+                            <div><label>Выбор языков</label></div>
+                            <div class="hover-settings">
+                                <input name="lang" id="generator_rus" type="radio">
+                                <label for="generator_rus">Русский</label>
+                            </div>
+                            <div class="hover-settings">
+                                <input name="lang" id="generator_eng" type="radio">
+                                <label for="generator_eng">Английский</label>
+                            </div>
+                            <div class="hover-settings">
+                                <input name="lang" checked id="generator_all" type="radio">
+                                <label for="generator_all">Русский и Английский</label>
+                            </div>
+                        </div>
+                        <div class="export ">
+                            <div><label>Выбор спецсимволов</label></div>
+                            <div class="hover-settings">
+                                <input id="generator_symv" type="checkbox">
+                                <label for="generator_symv">Включать символы</label>
+                            </div>
+                            <div class="hover-settings">
+                                <input id="generator_numb" type="checkbox">
+                                <label for="generator_numb">Включать цифры</label>
+                            </div>
+                        </div>
+                        <div class="export ">
+                            <div><label>Выбор регистра</label></div>
+                            <div class="hover-settings">
+
+                                    <input name="letters" id="generator_big" type="radio"/>
+                                    <label for="generator_big">Все заглавные</label>
+                            </div>
+                            <div class="hover-settings">
+                                <input name="letters" id="generator_small" type="radio">
+                                <label for="generator_small">Все строчные </label>
+                            </div>
+                            <div class="hover-settings">
+                                <input name="letters" checked id="generator_different" type="radio">
+                                <label for="generator_different">Все разные </label>
+                            </div>
+                        </div>
+                        <div class="export">
+                            <div class="hover-settings">
+                                <input name="export" id="generator_row" type="radio">
+                                <label for="generator_row">Выводить в строку</label>
+                            </div>
+                            <div class="hover-settings">
+                                <input name="export" checked id="generator_stolb" type="radio">
+                                <label for="generator_stolb">Выводить в столбец</label>
+                            </div>
+                        </div>
+
+                        <div id="generate" class="button27">Сгенерировать</div>
+                        <div id="clear" class="button27">Очистить</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="logic.js"></script>
+
+</body>
+</html>
